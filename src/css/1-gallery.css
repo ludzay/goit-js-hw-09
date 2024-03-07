@@ -1,0 +1,44 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.gallery {
+    list-style: none;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 1128px;
+    margin-left: 156px;
+
+}
+
+
+
+.gallery-image {
+
+    display: block;
+    width: 330px;
+    height: 200px;
+    object-fit: cover;
+
+
+}
+
+
+
+.modal {
+    width: 1440px;
+    height: 695px;
+    ;
+
+}
+
+.modal-image {
+    width: 1112px;
+    height: 640px;
+    align-items: center;
+    margin-left: 156px;
+}
