@@ -1,5 +1,5 @@
 import SimpleLightbox from 'simplelightbox/dist/simple-lightbox.esm';
-import 'simplelightbox/dist/simple-lightbox.js';
+
 import 'simplelightbox/dist/simple-lightbox.css';
 const images = [
   {
@@ -91,8 +91,4 @@ for (let image of images) {
 
 container.innerHTML = markup;
 
-let gallery = new SimpleLightbox('.gallery a');
-console.log(gallery);
-gallery.on('show.simplelightbox', function () {
-  // do something…
-});
+new SimpleLightbox('.gallery a', { captionsData: 'alt', captionDelay: 250 });
