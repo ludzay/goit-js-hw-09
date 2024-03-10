@@ -89,5 +89,8 @@ for (let image of images) {
 }
 
 container.innerHTML = markup;
-
-new SimpleLightbox('.gallery a', { captionsData: 'alt', captionDelay: 250 });
+console.log(SimpleLightbox);
+const lightbox = new SimpleLightbox('.gallery a', {
+  captionsData: 'alt',
+  captionDelay: 250,
+});
